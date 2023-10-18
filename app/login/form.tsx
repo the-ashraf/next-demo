@@ -24,7 +24,7 @@ export default function Form() {
         }
     }
     return (
-        <main className="h-screen w-full grid place-items-center bg-gray-100">
+        <main className="h-full w-full grid place-items-center bg-gray-100">
             <form onSubmit={handleSubmit} className="block p-6 w-full max-w-md">
                 <div className="flex flex-col">
                     <p className="text-sm">username: `kminchelle` password: `0lelplR` or any data <a className="text-purple-700 font-medium" href="https://dummyjson.com/users" target="_blank">here</a></p>
