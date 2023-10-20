@@ -1,7 +1,7 @@
 'use client'
 
 import Link from "next/link"
-import { MenuIcon, UsersIcon, XIcon } from "lucide-react"
+import { MenuIcon, UsersIcon, XIcon, CircleDollarSignIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {useState} from "react";
 import { useRouter } from 'next/navigation'
@@ -36,8 +36,8 @@ export default function Sidebar () {
                     </Button>
                 </li>
                 <li>
-                    <Button variant="secondary" className='w-full' onClick={() => navigate('/dashboard/users')}>
-                        <span className="flex items-center gap-2"><UsersIcon className="mr-2 h-4 w-4" /> Also Users</span>
+                    <Button variant="secondary" className='w-full' onClick={() => navigate('/dashboard/payments')}>
+                        <span className="flex items-center gap-2"><CircleDollarSignIcon className="mr-2 h-4 w-4" /> Payments</span>
                     </Button>
                 </li>
             </ul> }

@@ -4,6 +4,7 @@ import {FormEvent} from "react";
 import {signIn} from "next-auth/react";
 import {useRouter} from "next/navigation";
 import { Button } from "@/components/ui/button"
+import Link from "next/link";
 
 export default function Form() {
 
@@ -25,7 +26,7 @@ export default function Form() {
         }
     }
     return (
-        <main className="h-full w-full grid place-items-center bg-gray-100">
+        <main className="h-full w-full grid place-items-center">
             <form onSubmit={handleSubmit} className="block p-6 w-full max-w-md">
                 <div className="flex flex-col">
                     <p className="text-sm">username: `kminchelle` password: `0lelplR` or any data <a className="text-purple-700 font-medium" href="https://dummyjson.com/users" target="_blank">here</a></p>
@@ -34,6 +35,8 @@ export default function Form() {
                 </div>
 
                 <Button type="submit" className="bg-purple-500 text-purple-100 rounded-md py-2 block w-full mt-6">Submit</Button>
+
+                <Link className="inline-block mt-2 text-blue-600 underline font-bold" href='/'>Back to home</Link>
             </form>
         </main>
     )
