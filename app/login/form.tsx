@@ -3,6 +3,7 @@
 import {FormEvent} from "react";
 import {signIn} from "next-auth/react";
 import {useRouter} from "next/navigation";
+import { Button } from "@/components/ui/button"
 
 export default function Form() {
 
@@ -32,7 +33,7 @@ export default function Form() {
                     <input name="password" type="password" className="rounded-b-md bg-white border border-purple-300 py-2 px-3 outline-0 focus:ring focus:ring-purple-200" placeholder="Password" />
                 </div>
 
-                <button type="submit" className="bg-purple-500 text-purple-100 rounded-md py-2 block w-full mt-6">Submit</button>
+                <Button type="submit" className="bg-purple-500 text-purple-100 rounded-md py-2 block w-full mt-6">Submit</Button>
             </form>
         </main>
     )
